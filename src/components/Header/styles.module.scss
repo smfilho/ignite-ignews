@@ -19,14 +19,18 @@
     a {
       display: inline-block;
       position: relative;
-      padding: 0 5rem;
+      padding: 0 0.5rem;
       height: 5rem;
       line-height: 5rem;
       color: var(--gray-300);
 
       transition: color 0.2s;
 
-      &:hover{
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
         color: var(--white);
       }
 
@@ -41,8 +45,9 @@
         background: var(--yellow-500);
       }
     }
+  }
 
-
-
+  button {
+    margin-left: auto;
   }
 }
